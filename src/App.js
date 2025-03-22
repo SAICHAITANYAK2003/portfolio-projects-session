@@ -91,9 +91,11 @@ class App extends Component {
   state = {
     activeTabId: tabsList[0].tabId,
   }
+
   updateActiveTabId = tabId => {
     this.setState({activeTabId: tabId})
   }
+
   getfilteredProjects = () => {
     const {activeTabId} = this.state
     const filteredProjects = projectsList.filter(
@@ -101,6 +103,7 @@ class App extends Component {
     )
     return filteredProjects
   }
+
   render() {
     const filteredProjects = this.getfilteredProjects()
     const {activeTabId} = this.state

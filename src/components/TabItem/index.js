@@ -7,7 +7,7 @@ const TabItem = props => {
     updateActiveTabId(tabId)
   }
 
-  const activeTabClassName = isActive ? 'active-tab-btn' : null
+  const activeTabClassName = isActive ? 'active-tab-btn' : ''
 
   return (
     <li className="tab-item-container ">
